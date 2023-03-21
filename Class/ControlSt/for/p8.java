@@ -4,29 +4,38 @@ class Armstrong{
 
 	public static void main(String[] args){
 
-		int rem,count=0;
-		int N = 153;
-		int number = N;
+		int count=0;
+		int rem,N=1564;
+		int temp1=N,temp2=N;
+		int sum=0;
 
-		/*ile(N != 0){
-
-			rem = N % 10;
-			count = count + rem*rem*rem ;
-			N = N/10;
-		}*/
-
-		for(  ;N != 0;  ){
-
-			rem = N % 10;
-			count = count + rem*rem*rem ;
-			N = N/10;
+		while(temp2!=0){
+			temp2 = temp2 / 10;
+			count++;
 		}
 
-		if(count == number){
+		while(temp1!=0){
 
-			System.out.println(number + " is Armstrong number");
+			rem = temp1 % 10;
+			int mul = 1;
+
+			for(int i=1; i<=count; i++){
+
+				mul = mul * rem;
+			}
+
+			sum = sum + mul;
+			temp1 = temp1 / 10;
+		}
+
+		if(sum == N){
+
+			System.out.println(N + " is armstrong number");
 		}else{
-			System.out.println(number + " is not Armstrong number");
+			System.out.println(N + " is not armstrong number");
 		}
+
+
+
 	}
 }

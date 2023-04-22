@@ -29,21 +29,28 @@ class c2w{
 
 			for(int j=0; j<arr2.length; j++){
 
-				if(arr1[i] != arr2[j]){
+				if(arr1[i] == arr2[j]){
 
-			          	if(arr1[i] < arr2[j]){
-
-				         	System.out.print(arr1[i] + " ");
-				 
-				        }else if(arr1[i] > arr2[j]){
-					      
-					      	System.out.print(arr2[j] + " ");
-				        
-					}
+					arr1[i] = 0;
+					arr2[j] = 0;
+				
 				}
 			}
 
 		}
+
+		for(int i=0; i<arr1.length; i++){
+			if(arr1[i] != 0){
+				System.out.print(arr1[i] + "  ");
+			}
+		}
+
+		for(int j=0; j<arr2.length; j++){
+			if(arr2[j] != 0){
+				System.out.print(arr2[j] + "  ");
+			}
+		}
+		System.out.println();
 	
 	}
 }

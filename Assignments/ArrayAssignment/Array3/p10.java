@@ -1,5 +1,4 @@
-
-/* print armstrong number from an array */
+/* Program to print second lowest element from an array*/
 
 import java.io.*;
 class c2w{
@@ -13,36 +12,30 @@ class c2w{
 
 		int arr[] = new int[size];
 
-		System.out.println("Enter array elements:");
-
+		System.out.println("Enter elements in an array:");
 		for(int i=0; i<arr.length; i++){
+
 			arr[i] = Integer.parseInt(br.readLine());
 		}
 
-		for(int i=0; i<arr.length; i++){
-			int count = 0;
-			int sum = 0;
-			int temp1 = arr[i] , temp2 = arr[i];
-			while(temp1 != 0){
-				count++;
-				temp1 = temp1 / 10;
+		int min1 = arr[0];
+		int min2 = arr[1];
+
+		for(int i=1; i<arr.length; i++){
+
+			if(min1 > arr[i]){
+
+				min2 = min1;
+				min1 = arr[i];
 			}
 
-			while(temp2 != 0){
-			       int rem = temp2 % 10;
-			       int mul = 1;
-		               for(int j=1; j<=count; j++){
-			               mul = mul * rem;
-			       }
-			       temp2 = temp2 / 10;
-		               sum = sum + mul;
+			if(min1 < arr[i] && min2 > arr[i]){
+
+				min2 = arr[i];
 			}
-
-                	if(sum == arr[i]){
-                               System.out.println("armstrong no. " + arr[i] + " found at index " + i );
-	                }
-
 		}
+
+		System.out.println("Second lowest element in an array:" + min2);	
 	}
 }
 

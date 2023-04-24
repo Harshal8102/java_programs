@@ -1,4 +1,5 @@
-/* print composite number from an array */
+
+/* print perfect number from an array */
 
 import java.io.*;
 class c2w{
@@ -19,19 +20,18 @@ class c2w{
 		}
 
 		for(int i=0; i<arr.length; i++){
-			int count = 0;
-			for(int j=1; j<=arr[i]; j++){
+			int sum=0;
+			for(int j=1; j<arr[i]; j++){
 				
 				if(arr[i] % j == 0){
-					count++;
+					sum = sum + j;
 				}
 			}
 
-			if(count > 2){
-				System.out.println("composite no. " + arr[i] + " found at index " + i);
+			if(sum == arr[i]){
+				System.out.println("Perfect no. " + arr[i] + " found at index " + i);
 			}
 		}
 	}
 }
-
 

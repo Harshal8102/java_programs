@@ -1,5 +1,5 @@
 
-/* print palindrome number from an array */
+/* print armstrong number from an array */
 
 import java.io.*;
 class c2w{
@@ -20,17 +20,28 @@ class c2w{
 		}
 
 		for(int i=0; i<arr.length; i++){
-			int n = arr[i];
-			int reverse = 0;
-			while(n != 0){
-				int rem = n % 10;
-				reverse = reverse * 10 + rem;
-				n = n / 10;
+			int count = 0;
+			int sum = 0;
+			int temp1 = arr[i] , temp2 = arr[i];
+			while(temp1 != 0){
+				count++;
+				temp1 = temp1 / 10;
 			}
 
-			if(reverse == arr[i]){
-				System.out.println("palindrome no. " + arr[i] + " found at index " + i);
+			while(temp2 != 0){
+			       int rem = temp2 % 10;
+			       int mul = 1;
+		               for(int j=1; j<=count; j++){
+			               mul = mul * rem;
+			       }
+			       temp2 = temp2 / 10;
+		               sum = sum + mul;
 			}
+
+                	if(sum == arr[i]){
+                               System.out.println("armstrong no. " + arr[i] + " found at index " + i );
+	                }
+
 		}
 	}
 }

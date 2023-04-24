@@ -1,5 +1,5 @@
 
-/* print palindrome number from an array */
+/* print prime number from an array */
 
 import java.io.*;
 class c2w{
@@ -20,16 +20,16 @@ class c2w{
 		}
 
 		for(int i=0; i<arr.length; i++){
-			int n = arr[i];
-			int reverse = 0;
-			while(n != 0){
-				int rem = n % 10;
-				reverse = reverse * 10 + rem;
-				n = n / 10;
+			int count = 0;
+			for(int j=1; j<=arr[i]; j++){
+				
+				if(arr[i] % j == 0){
+					count++;
+				}
 			}
 
-			if(reverse == arr[i]){
-				System.out.println("palindrome no. " + arr[i] + " found at index " + i);
+			if(count == 2){
+				System.out.println("prime no. " + arr[i] + " found at index " + i);
 			}
 		}
 	}

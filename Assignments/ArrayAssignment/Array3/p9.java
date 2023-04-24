@@ -1,5 +1,4 @@
-
-/* print palindrome number from an array */
+/* Program to print second largest element from an array*/
 
 import java.io.*;
 class c2w{
@@ -13,25 +12,29 @@ class c2w{
 
 		int arr[] = new int[size];
 
-		System.out.println("Enter array elements:");
-
+		System.out.println("Enter elements in an array:");
 		for(int i=0; i<arr.length; i++){
+
 			arr[i] = Integer.parseInt(br.readLine());
 		}
 
-		for(int i=0; i<arr.length; i++){
-			int n = arr[i];
-			int reverse = 0;
-			while(n != 0){
-				int rem = n % 10;
-				reverse = reverse * 10 + rem;
-				n = n / 10;
+		int max1 = arr[0];
+		int max2 = 0;
+
+		for(int i=1; i<arr.length; i++){
+
+			if(max1 < arr[i]){
+
+				max2 = max1;
+				max1 = arr[i];
 			}
 
-			if(reverse == arr[i]){
-				System.out.println("palindrome no. " + arr[i] + " found at index " + i);
+			if(max1 > arr[i]  &&  max2 < arr[i]){
+
+				max2 = arr[i];
 			}
 		}
+
+		System.out.println("Second largest element in an array:" + max2);
 	}
 }
-

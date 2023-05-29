@@ -5,20 +5,27 @@ class Core{
 
 		char arr1[] = str.toCharArray();
 		char d[] = del.toCharArray();
-		String []ans = new String[10];
-		int j = 0;
+		int count=1;
+		
+		for(int i=0; i<arr1.length;i++){
+			if(arr1[i] == d[0]){
+				count++;
+			}
+		}
+		String ans[] = new String[count];
+		int j=0;
+		ans[j] = "";
 
 		for(int i=0; i<arr1.length; i++){
 
 			if(arr1[i] != d[0]){
-
-			      ans[j] = "" + arr1[i];
+				ans[j] += arr1[i];
 			}else{
 				j++;
+				ans[j] = "";
 			}
 		}
-
-		for(int i=0; i<ans.length; i++){
+		for(int i=0;i<ans.length; i++){
 
 			System.out.println(ans[i]);
 		}

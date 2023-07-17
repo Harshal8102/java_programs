@@ -8,6 +8,10 @@ class LastIndexOfDemo{
 
 		char arr[] = str.toCharArray();
 
+		if(in >= arr.length){
+			in = arr.length-1;
+		}
+
 		for(int i=in; i>=0; i--){
 
 			if(arr[i] == ch){

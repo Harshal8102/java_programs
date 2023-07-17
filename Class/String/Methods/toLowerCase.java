@@ -8,7 +8,7 @@ class MyToLowerCase{
 
 	public static void main(String[] args){
 
-		String str = "Core2Web";
+		String str = "Core  2Web";
 		System.out.println(str.toLowerCase());
 	}
 }

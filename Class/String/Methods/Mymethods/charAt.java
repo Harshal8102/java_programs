@@ -24,6 +24,7 @@ class CharAtDemo{
 		CharAtDemo obj = new CharAtDemo();
 
 		System.out.println(obj.myStrCharAt(str,in));
+		System.out.println(str.charAt(in));
 	}
 }
 

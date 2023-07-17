@@ -42,7 +42,12 @@ class Core{
 		String del = sc.nextLine();
 
 		myStrSplit(str,del);
+		String ans[] = str.split(del);
 
+		for(int i=0 ; i<ans.length; i++){
+
+			System.out.println(ans[i]);
+		}
 	}
 }
 

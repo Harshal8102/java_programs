@@ -14,6 +14,7 @@ class Core{
 				y=0;
 			}else{
 				y=1;
+				break;
 			}
 			j--;
 		}	

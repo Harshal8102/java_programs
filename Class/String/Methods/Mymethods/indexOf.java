@@ -7,6 +7,14 @@ class IndexOfDemo{
 
 		char arr[] = str.toCharArray();
 
+		if(in < 0){
+			in = 0;
+		}else if(in >= arr.length){
+
+			return -1;
+		}
+		
+
 		for(int i=in; i<arr.length; i++){
 
 			if(arr[i] == ch){
@@ -32,6 +40,7 @@ class IndexOfDemo{
 		int in = sc.nextInt();
 
 		System.out.println("Index is = " + IndexOf(str,ch,in));
+		System.out.println(str.indexOf(ch,in));
 	}
 }
 

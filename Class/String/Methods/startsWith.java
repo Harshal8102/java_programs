@@ -11,6 +11,11 @@ class StartsWith{
 
 		String str = "Core2web";
 		System.out.println(str.startsWith("2w",0));
+
+		System.out.println(str.startsWith("or",1));
+
+		System.out.println(str.startsWith("or",0));
+	
 	}
 }
 

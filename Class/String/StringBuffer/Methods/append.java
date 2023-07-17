@@ -15,5 +15,6 @@ class AppendDemo{
 		str1.append(" Mohite");
 
 		System.out.println(str1);
+
 	}
 }

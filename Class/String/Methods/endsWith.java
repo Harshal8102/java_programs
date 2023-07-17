@@ -10,7 +10,15 @@ class EndsWith{
 	public static void main(String[] args){
 
 		String str1 = "know the code till the core";
+
 		System.out.println(str1.endsWith("core"));
+
+		System.out.println(str1.endsWith(""));
+		
+		System.out.println(str1.endsWith("the"));
+	
+		System.out.println(str1.endsWith(null));
+	
 	}
 }
 

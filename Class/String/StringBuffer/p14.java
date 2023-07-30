@@ -9,6 +9,7 @@ class c2w{
 		System.out.println(str);
 
 		str.setLength(str.length());
+		System.out.println(str.length());
 
 		System.out.println(str.capacity());
 	}

@@ -4,13 +4,13 @@ class Core2web{
 
 		StringBuffer sbvar1 = new StringBuffer("core2web");
 
-		long lv1 = System.identityHashCode(sbvar1);
+		//long lv1 = System.identityHashCode(sbvar1);
 
-		sbvar1.append("technologies");
+		//sbvar1.append("technologies");
 
-		long lv2 = System.identityHashCode(sbvar1);
+		//long lv2 = System.identityHashCode(sbvar1);
 
-		if (lv1 == lv2){
+		if (sbvar1 == sbvar1.append("technologies")){
 
 			System.out.println("True");
 		}else{

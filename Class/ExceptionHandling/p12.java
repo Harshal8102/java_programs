@@ -1,8 +1,9 @@
 //InterruptedException (unreported Exception)
-import java.io.*;
+
 class Demo{
 
 	public static void main(String[] args){
+
 
 		for(int i = 0; i< 10; i++){
 
@@ -15,6 +16,7 @@ class Demo{
 				System.out.println("Catch 1");
 
 			}
+
 		}
 	}
 }

@@ -26,6 +26,6 @@ class Demo{
 
 			System.out.println(product);
 		}
-			
+
 	}
 }

@@ -1,15 +1,18 @@
+
 class Sailor{
 
 	private String name;
-	private int age;
+	private  int age;
 
 	public Sailor(String name, int age){
+
 		System.out.println(this.age);
 
 		this.name = name;
 		this.age = age;
 	}
 }
+
 class Engineer extends Sailor{
 
 	private String specialization;
@@ -21,6 +24,7 @@ class Engineer extends Sailor{
 
 		this.specialization = specialization;
 		System.out.println(this.specialization);
+
 	}
 
 }

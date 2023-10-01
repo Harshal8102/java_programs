@@ -1,25 +1,23 @@
 class Demo{
 
-	 int y = 12;
+	int y = 12;
 
 	Demo(){
+		
 		System.out.println("In no argu");
 		System.out.println(this.y);
-	
 	}
 
 	Demo(int x){
-
+		this();
 		System.out.println("In para");
-		System.out.println(this.y);
-	
+		System.out.println(x);
 	}
 
 	Demo(Demo xyz){
-
+		this(10);
 		System.out.println("In para- Demo ");
 		System.out.println(this.y);
-	
 	}
 
 

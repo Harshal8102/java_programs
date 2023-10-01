@@ -1,4 +1,8 @@
-class Parent{
+public class Parent{
+
+	 Parent(){
+		System.out.println("In parent constructor");
+	}
 
 	static int x = 10;
 
@@ -12,6 +16,10 @@ class Parent{
 	}
 }
 class Child extends Parent{
+
+	Child(){
+		System.out.println("In child constructor");
+	}
 
 	static{
 		System.out.println("In child static block");

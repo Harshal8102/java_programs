@@ -1,12 +1,12 @@
 class Player{
 
-	private int jerNo = 0;
-	private String name = null;
+	private int jerNo ;
+	private String name=null;
 
-	Player(int no,String nam){
+	Player(int no,String name){
 	
 		this.jerNo = no;
-		this.name = nam;
+		this.name = name;
 		System.out.println("In constructor");
 	}
 
@@ -28,10 +28,13 @@ class Client{
 		Player obj1 = new Player(7,"MSD");
 		obj1.info();
 
-		/*Player obj2 = new Player(18,"Virat");
+		String nam = "Virat";
+		System.out.println(System.identityHashCode(nam));
+
+		Player obj2 = new Player(18,new String("Virat"));
 		obj2.info();
 
 		Player obj3 = new Player(45,"Rohit");
-		obj3.info();*/
+		obj3.info();
 	}
 }

@@ -23,7 +23,7 @@ class Child extends Parent{
 		System.out.println(super.x);
 		System.out.println(Child.y);
 		System.out.println(x);
-		System.out.println(y);
+		System.out.println(Parent.y);
 	}
 
 }

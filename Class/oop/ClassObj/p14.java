@@ -22,7 +22,7 @@ class people{
 
 		obj1.info();
 		
-		obj2.MostNoTrof = "CSK";
+		obj1.MostNoTrof = "CSK";
 		obj1.favTeam = "Mumbai-indians";
 
 		obj1.info();

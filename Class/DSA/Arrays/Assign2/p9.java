@@ -18,11 +18,8 @@ class Demo{
 			System.out.print(max + "  ");
 		}*/
 
-		int i=0,j=0;
-		while(i < n){
 
-
-			
+		
 		System.out.println();
 	}
 

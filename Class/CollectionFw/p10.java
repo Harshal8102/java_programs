@@ -13,6 +13,7 @@ class HashSetDemo{
 		hs.add("Rahul");
 		hs.add("Ashish");
 
+
 		System.out.println(hs);
 	}
 }

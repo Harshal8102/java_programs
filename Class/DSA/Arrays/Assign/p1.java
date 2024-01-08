@@ -28,5 +28,7 @@ class Demo{
 		long n = sc.nextLong();
 
 		System.out.println(reverse(n));
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println(Integer.MIN_VALUE);
 	}
 }

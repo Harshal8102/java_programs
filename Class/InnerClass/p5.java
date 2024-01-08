@@ -16,7 +16,7 @@ class Client{
 	//	System.out.println(obj.new Inner().b);
 	
 		System.out.println(Outer.Inner.b);
-	
+
 	}
 }
 

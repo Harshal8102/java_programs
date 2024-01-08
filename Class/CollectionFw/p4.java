@@ -1,6 +1,5 @@
 
 import java.util.*;
-
 class ArrayListDemo{
 
 	public static void main(String[] args){
@@ -12,12 +11,14 @@ class ArrayListDemo{
 		obj.add("harshal");
 		obj.add(45.55);
 
-		for(var x : obj)
-			System.out.println(x);
-
+	
 		for(int i=0; i<obj.size(); i++){
 
 			System.out.println(obj.get(i));
 		}
+
+		obj.clear();
+
+		System.out.println(obj);
 	}
 }

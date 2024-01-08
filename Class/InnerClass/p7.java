@@ -30,6 +30,7 @@ class Client{
 			}
 
 			Demo fun(){
+			
 				System.out.println("in fun");
 
 				return new Demo();
@@ -38,9 +39,6 @@ class Client{
 		}.fun();
 
 		obj1.marry();
-
-		
-
 		
 	}
 }

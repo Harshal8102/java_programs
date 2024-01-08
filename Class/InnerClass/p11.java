@@ -12,6 +12,13 @@ class Outer{
 		}
 
 		static int a=10;
+
+		void m2(){
+
+			
+			System.out.println("in m2 inner");
+
+		}
 	
 	}
 }
@@ -21,6 +28,7 @@ class Client{
 
 		Outer.Inner obj1 = new Outer.Inner();
 		obj1.m1();
+		obj1.m2();
 
 		System.out.println(Outer.Inner.a);
 

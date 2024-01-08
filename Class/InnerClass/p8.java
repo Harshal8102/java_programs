@@ -31,6 +31,8 @@ class Client{
 		Outer obj = new Outer();
 		obj.m1();
 		obj.m2();
+
+		new Outer().m1();
 	}
 }
 

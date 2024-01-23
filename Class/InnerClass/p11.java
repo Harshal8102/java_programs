@@ -1,6 +1,5 @@
 //Static Inner Class
 
-
 class Outer{
 
 	 static class Inner{
@@ -13,13 +12,9 @@ class Outer{
 
 		static int a=10;
 
-		void m2(){
-
-			
+		void m2(){	
 			System.out.println("in m2 inner");
-
 		}
-	
 	}
 }
 class Client{

@@ -9,6 +9,8 @@ class C2w{
 
 	public static void main(String[] args){
 
+		C2w obj = new C2w();
 		System.out.println("In main");
+		System.out.println(obj.x);
 	}
 }

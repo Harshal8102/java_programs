@@ -14,7 +14,6 @@ class Outer{
 	void fun1(){
 
 		System.out.println(this);
-
 		System.out.println("fun-1 inner");
 	}
 }
@@ -32,11 +31,7 @@ class Client{
 		obj1.fun2();
 		System.out.println(obj1);
 
-
-
 //		Outer.Inner obj2 = obj.new Inner();  // Outer$Inner(obj2, obj)
 //		obj2.fun2();
-
 	}
 }
-

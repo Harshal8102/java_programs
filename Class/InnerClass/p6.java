@@ -2,9 +2,7 @@
 class Demo{
 
 	int x = 10;
-
 	void marry(){
-
 		System.out.println("kriti sanon");
 	}
 }

@@ -1,10 +1,8 @@
 //Method local inner class
 
-
 class Outer{
 
 	void m1(){
-
 		System.out.println("In m1-Outer");
 
 		class Inner{
@@ -20,12 +18,11 @@ class Outer{
 	}
 
 	void m2(){
-
 		System.out.println("In m2-Outer");
 	}
 }
-class Client{
 
+class Client{
 	public static void main (String[] args) {
 
 		Outer obj = new Outer();

@@ -1,6 +1,6 @@
 class c2w{
 
-	public static void main(String[] args){
+	public static void main(String... args){
 
 		String var1 = null;
 
@@ -9,4 +9,3 @@ class c2w{
 		System.out.println(var1);
 	}
 }
-

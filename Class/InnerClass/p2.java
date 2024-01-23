@@ -22,7 +22,7 @@ class Outer{
 
 	void fun1(){
 
-		System.out.println("fun1 inner");
+		System.out.println("fun1 outer");
 	}
 }
 class Client{

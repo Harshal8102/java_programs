@@ -4,7 +4,6 @@ class Demo{
 	private int y=20;
 
 	static int z = 30;
-	static int m = 30;
 
 	void display(){
 

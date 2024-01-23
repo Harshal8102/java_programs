@@ -15,6 +15,11 @@ class StartsWith{
 		System.out.println(str.startsWith("or",1));
 
 		System.out.println(str.startsWith("or",0));
+		
+		
+		System.out.println(str.startsWith("2w",4));
+		
+
 	
 	}
 }

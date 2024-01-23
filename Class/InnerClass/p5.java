@@ -4,7 +4,6 @@ class Outer{
 
 		int a = 30;
 	        final static int b = 40;
-
 	}
 }
 class Client{
@@ -16,7 +15,6 @@ class Client{
 	//	System.out.println(obj.new Inner().b);
 	
 		System.out.println(Outer.Inner.b);
-
 	}
 }
 

@@ -25,6 +25,7 @@ class people{
 		obj1.MostNoTrof = "CSK";
 		obj1.favTeam = "Mumbai-indians";
 
+		System.out.println("<------after modifying");
 		obj1.info();
 		obj2.info();
 	}

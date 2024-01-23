@@ -1,7 +1,6 @@
 class Parent{
 
 	Object fun(){
-
 		System.out.println("Parent fun");
 		return new Object();
 	}
@@ -23,4 +22,3 @@ class Client{
 		p.fun();
 	}
 }
-

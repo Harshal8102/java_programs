@@ -16,7 +16,7 @@ class Child extends Parent{
 
 		System.out.println("Child constructor");
 	}
-	void gun(){
+	void fun(){
 		System.out.println("In gun");
 	}
 }
@@ -24,9 +24,9 @@ class Client{
 
 	public static void main(String[] args){
 
-		Child obj = new Child();
+		Parent obj = new Child();
 		obj.fun();
-		obj.gun();
+		//obj.gun();
 
 		Parent obj2 = new Parent();
 		obj2.fun();

@@ -7,9 +7,7 @@ class Parent{
 	}
 }
 class Child extends Parent{
-
 	static void fun(){
-
 		System.out.println("Child fun");
 	}
 }
@@ -27,4 +25,3 @@ class Client{
 		obj3.fun();                       //Parent fun
 	}
 }
-

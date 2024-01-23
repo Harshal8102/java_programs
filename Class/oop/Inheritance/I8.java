@@ -1,7 +1,7 @@
 
 class Sailor{
 
-	private String name;
+	String name;
 	private  int age;
 
 	public Sailor(String name, int age){
@@ -15,7 +15,7 @@ class Sailor{
 
 class Engineer extends Sailor{
 
-	private String specialization;
+	String specialization;
 
 	public Engineer(String name,int age, String specialization){
 

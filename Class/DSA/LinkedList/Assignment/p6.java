@@ -41,11 +41,8 @@ class LinkedList{
 		if(temp.next == null)
 			return head;
 
-		if(temp.next.next == null)
-			temp.next = null;
-		else{
-			temp.next = temp.next.next;
-		}
+		temp.next = temp.next.next;
+		
 		return head;
 	}
 

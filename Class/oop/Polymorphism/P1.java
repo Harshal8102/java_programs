@@ -1,13 +1,14 @@
 class Demo{
 
-	void fun(int x){                                  //fun(int)
+	void fun(float x){                                  //fun(int)
 
-		System.out.println(x);
+		System.out.println("int float : " + x);
 	}
 
-	int fun(float y){                               //fun(float)
+	void fun(int y){                               //fun(float)
 
-		System.out.println(y);
+		System.out.println("in int : " + y);
+		
 	}
 
 	void fun(Demo obj){                             //fun(Demo)

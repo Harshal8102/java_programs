@@ -17,8 +17,6 @@ class demo{
 		System.out.println(System.identityHashCode(s1));
 		
 		System.out.println(System.identityHashCode(s2));
-
-
 	}
 }
 

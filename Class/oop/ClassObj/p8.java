@@ -17,7 +17,14 @@ class mainDemo{
 		Employee emp1 = new Employee();
 		emp1.empInfo();
 
-		System.out.println(emp1.empId);
-		System.out.println(emp1.str);
+		emp1.empId = 25;
+		emp1.str = "harsha";
+
+		Employee emp2 = new Employee();
+		emp1.empInfo();
+		emp2.empInfo();
+
+	//	System.out.println(emp1.empId);
+	//	System.out.println(emp1.str);
 	}
 }

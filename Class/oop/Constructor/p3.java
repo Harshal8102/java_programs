@@ -14,7 +14,6 @@ class ConstructorDemo{
 
 		ConstructorDemo obj1 = new ConstructorDemo();
 		ConstructorDemo obj2 = new ConstructorDemo();
-
 		obj1.fun();
 	}
 }

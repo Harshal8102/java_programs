@@ -9,7 +9,8 @@ class Demo{
 	}
 
 	static void fun2(){
-	//	System.out.println(x);
+		Demo obj = new Demo();
+		System.out.println(obj.x);
 		System.out.println(y);
 	}
 }
@@ -22,7 +23,7 @@ class Client{
 		obj.fun2();
 
 		System.out.println(obj.x);
-		System.out.println(obj.y);
+		System.out.println(Demo.y);
 	}
 }
 

@@ -13,7 +13,7 @@ class Recurrsion{
 	void printNumbers(int n){
 
 		if(n == 0)
-			return ;
+			return;
 
 		printNumbers(n-1);
 
@@ -25,8 +25,5 @@ class Recurrsion{
 		Recurrsion obj = new Recurrsion();
 
 		obj.printNumbers(10);
-
 	}
 }
-
-

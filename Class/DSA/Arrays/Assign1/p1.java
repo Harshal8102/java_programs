@@ -6,7 +6,6 @@ class Demo{
 	static int findMinSumSubArray(int a[],int n){
 
 		int minSum = Integer.MAX_VALUE;
-		
 
 	/*	for(int i=0; i<n; i++){
 
@@ -19,6 +18,7 @@ class Demo{
 					minSum = sum;
 			}
 		}*/
+
 		int currSum = Integer.MAX_VALUE;
 
 		for(int i=0; i<n; i++){
@@ -29,16 +29,15 @@ class Demo{
 				currSum += a[i];
 
 			if(minSum > currSum)
-				minSum = currSum;
-			
+				minSum = currSum;	
 		}
 
 		return minSum;
 	}
-		
+
 	public static void main(String[] args){
 
-		int a[] = new int[]{2,6,8,1,4};
+		int a[] = new int[]{2,6,-5,1,-4};
 
 		int n = 5;
 

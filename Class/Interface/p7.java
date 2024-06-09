@@ -14,7 +14,6 @@ interface Demo2{
 	}
 }
 class DemoChild implements Demo1,Demo2{
-
 	static void fun(){
 
 		System.out.println("in fun child");

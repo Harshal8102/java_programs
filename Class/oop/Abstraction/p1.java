@@ -6,7 +6,6 @@ abstract class Parent{
 	}
 	abstract void marry();
 }
-
 class Child extends Parent{
 
 	void marry(){

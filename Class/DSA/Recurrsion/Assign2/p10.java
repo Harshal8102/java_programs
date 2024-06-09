@@ -46,13 +46,13 @@ class Recurrsion{
 		for(int i=0;i<count; i++){
 			mul = mul * (num%10);
 		}*/
+
 		int digit = num%10;
 
 		return (int)Math.pow(digit,count) + calculateSum(num/10, count);
 	}
 
 	boolean isArmstrong(int num){
-
 	//	int c = countDigits(num);
 		int sum = calculateSum(num,(int)Math.log10(num)+1);//,c);
 		return sum == num;

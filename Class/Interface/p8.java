@@ -6,11 +6,13 @@ interface Demo{
 
 	void fun();
 }
-class Client{
+class Client{// implements Demo{
 
 	public static void main(String[] args){
 
 		System.out.println(Demo.x);
 		System.out.println(Demo.y);
+	//	System.out.println(x);
+	//	System.out.println(y);
 	}
 }

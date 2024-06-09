@@ -4,8 +4,8 @@ class Recurrsion{
 
 	int fibo(int num){
 
-		if(num <= 2)
-			return num-1;
+		if(num <= 1)
+			return num;
 		
 		return fibo(num-2) + fibo(num-1);
 	}

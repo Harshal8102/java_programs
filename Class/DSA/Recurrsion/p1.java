@@ -1,6 +1,7 @@
 
 import java.util.*;
 class Demo{
+
 	void printNumber(int n){
 		
 		if(n == 0)
@@ -22,5 +23,3 @@ class Demo{
 		obj.printNumber(n);
 	}
 }
-
-	

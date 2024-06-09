@@ -9,8 +9,7 @@ class Demo{
 		int sum = 0;
 
 		int start = 0,end = k-1;
-/*
-		while(end < a.length){
+/*		while(end < a.length){
 			sum = 0;
 			for(int i=start; i<=end; i++){
 				sum += a[i];
@@ -35,7 +34,6 @@ class Demo{
 				sum = preSum[end];
 			else
 				sum = preSum[end] - preSum[start-1];
-
 			if(maxSum < sum)
 				maxSum = sum;
 
@@ -45,6 +43,7 @@ class Demo{
 
 		return maxSum;
 	}
+
 	public static void main(String[] args){
 
 		Scanner sc = new Scanner(System.in);
@@ -55,7 +54,6 @@ class Demo{
 		int a[] = new int[n];
 
 		for(int i=0; i<n; i++){
-
 			a[i] = sc.nextInt();
 		}
 

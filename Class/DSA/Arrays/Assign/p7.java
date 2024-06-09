@@ -1,6 +1,5 @@
 //Time to equality
 
-
 import java.util.*;
 class Demo{
 
@@ -40,4 +39,3 @@ class Demo{
 		System.out.println(timeInS(arr,n));
 	}
 }
-

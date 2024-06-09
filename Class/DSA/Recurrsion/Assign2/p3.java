@@ -1,8 +1,7 @@
 //print maximum digit in a given number
 
 import java.io.*;
-class Recurrsion{
-	
+class Recurrsion{	
 
 	int maxDigits(int num){
 
@@ -11,7 +10,7 @@ class Recurrsion{
 
 		int temp = maxDigits(num/10);
 
-		return (num%10>temp) ? num%10 : temp ; 
+		return (num%10>temp) ? num%10 : temp; 
 	}
 
 	public static void main(String[] args)throws IOException{

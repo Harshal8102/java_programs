@@ -11,7 +11,7 @@ class Recurrsion{
 		int count = 0;
 
 		if(num%10 == d)
-			count++;
+			count = 1;
 
 		return count + countOccurance(num/10,d);
 	}

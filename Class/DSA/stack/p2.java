@@ -1,4 +1,4 @@
-//Stack implementation by array
+//Stack implementation by Linkedlist
 
 import java.io.*;
 class Stack{

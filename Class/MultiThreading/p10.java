@@ -10,8 +10,9 @@ class MyThread extends Thread{
 	}
 	public void run(){
 
-		System.out.println(getName());
+		System.out.println(currentThread().getName());
 		System.out.println(Thread.currentThread().getThreadGroup());
+		System.out.println(Thread.currentThread());
 	}
 }
 
@@ -29,4 +30,3 @@ class ThreadGroupDemo{
 		obj2.start();
 	}
 }
-

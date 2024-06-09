@@ -7,6 +7,7 @@ class MyThread extends Thread{
 		System.out.println("MyThread : " + t.getPriority());
 	}
 }
+
 class Threaddemo{
 
 	public static void main(String[] args){
@@ -22,9 +23,8 @@ class Threaddemo{
 
 		MyThread obj2 = new MyThread();
 		obj2.start();
+	
 
 		//obj2.start();                 IllegalThreadStateException
-
 	}
 }
-

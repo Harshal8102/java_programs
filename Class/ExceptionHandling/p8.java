@@ -9,17 +9,13 @@ class Demo{
 		String str = br.readLine();
 		System.out.println(str);
 
-	
-		 	br.close();
-		
+		 	br.close();		
 		try{
 			String str1 = br.readLine();
 			System.out.println(str1);
-
+	
 		}catch(IOException obj){
 			System.out.println("std in closed");
 		}
-
 	}
 }
-

@@ -1,5 +1,6 @@
 //determine given number is happy number or not
 //happy number is number which eventually reaches 1 when replaced by sum of square of each digit)
+
 import java.util.*;
 import java.io.*;
 class Recurrsion{
@@ -34,7 +35,7 @@ class Recurrsion{
 	boolean isHappyNumber(int num,Set<Integer> sawSet){
 
 		if(num == 1)
-			return num == 1;
+			return true;
 
 		if(!sawSet.add(num))
 			return false;
@@ -57,5 +58,6 @@ class Recurrsion{
 			System.out.println(num + " is happy number");
 		else
 			System.out.println(num + " is not happy number");
+
 	}
 }

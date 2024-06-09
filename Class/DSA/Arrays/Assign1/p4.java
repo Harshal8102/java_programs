@@ -1,6 +1,7 @@
 //Given: positive integer array & positive integer target, return minimal length of a subarray
 //whose sum is greater than or equal to target , if there is no subarray return 0 instead
 
+
 import java.util.*;
 class Demo{
 
@@ -23,6 +24,7 @@ class Demo{
 				}
 			}
 		}*/
+
 		int i=-1,j=0;
 
 		while(i < a.length && j<=i){
@@ -30,7 +32,7 @@ class Demo{
 			if(sum >= target){
 				if(minLen > (i-j+1))
 					minLen = (i-j+1);
-
+			
 				sum -= a[j];
 				j++;
 			}else{

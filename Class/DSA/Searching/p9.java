@@ -1,5 +1,6 @@
 
 //find starting & ending position of target
+
 import java.util.*;
 import java.io.*;
 class BinarySearch{
@@ -23,6 +24,7 @@ class BinarySearch{
 					al.add(s);
 					break;
 				}
+
 			}else if(a[mid] < target)
 				start = mid+1;
 			else

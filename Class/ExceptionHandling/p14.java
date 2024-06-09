@@ -12,9 +12,9 @@ class demo{
 			int data = sc.nextInt();
 			System.out.println(10/data);
 	
-		}catch(ArithmeticException | NumberFormatException | InputMismatchException obj){
+		}catch(ArithmeticException | NumberFormatException | InputMismatchException  obj){
 								
-			System.out.println("Exception handled");
+			System.out.println("Exception handled" + obj);
 		}
 	}
 }

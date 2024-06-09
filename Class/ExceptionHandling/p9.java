@@ -9,7 +9,7 @@ class Demo{
 				
 			}catch(ArithmeticException obj){
 									//Handling code
-				System.out.println("Exception occured");    
+				System.out.println("Exception occured");   	
 			}
 
 			System.out.println("End main");

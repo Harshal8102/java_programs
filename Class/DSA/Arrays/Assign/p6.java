@@ -47,5 +47,3 @@ class Demo{
 		findRangeSum(arr,n,q);
 	}
 }
-
-

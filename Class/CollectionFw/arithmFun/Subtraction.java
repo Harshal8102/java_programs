@@ -1,5 +1,4 @@
 package arithmFun;
-
 public class Subtraction{
 
 	int num1 = 0;

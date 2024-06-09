@@ -14,7 +14,6 @@ class Demo{
 		}
 
 		if(index < 0){
-
 			int ans[] = new int[n+1];
 			ans[0] = 1;
 			return ans;
@@ -34,7 +33,6 @@ class Demo{
 		int arr[] = new int[n];
 
 		for(int i=0; i<n; i++){
-
 			arr[i] = sc.nextInt();
 		}
 
@@ -42,7 +40,7 @@ class Demo{
 
 		for(int x : ans)
 			System.out.print(x + "  ");
-		System.out.println();
 
+		System.out.println();
 	}
 }

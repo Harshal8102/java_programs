@@ -17,9 +17,9 @@ class Demo{
 			if(s.charAt(0) != ans.charAt(0))
 				return false;
 		}
-
 		return false;
 	}
+
 	public static void main(String[] args){
 
 		Scanner sc = new Scanner(System.in);
@@ -36,6 +36,4 @@ class Demo{
 
 		System.out.println(checkPrefixString(s,words,n));
 	}
-}
-
-		
+}	

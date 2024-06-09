@@ -8,17 +8,15 @@ class Demo{
 		int data = 0;
 
 		try{
-		
 			data = Integer.parseInt(br.readLine());
+		}catch(IllegalArgumentException obj){     			//child
+		
+			System.out.println(obj);
+			System.out.println("exception handle 1");
 
-		}catch(IllegalArgumentException obj){                                    //child
-
-			System.out.println("Exception handle 1");
-
-		}catch(RuntimeException obj){                                            //parent
-
+		}catch(RuntimeException obj){					//parent
+		
 			System.out.println("Exception handle 2");
-
 		}
 	
 		System.out.println(data);

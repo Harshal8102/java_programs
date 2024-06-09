@@ -12,7 +12,6 @@ class Node{
 		this.data = data;
 	}
 }
-
 class LinkedList{
 
 	Node head = null;
@@ -22,12 +21,12 @@ class LinkedList{
 		Node newNode = new Node(data);
 
 		if(head == null){
-
 			head = newNode;
 		}else{
 			newNode.next = head;
 			head = newNode;
 		}
+		
 	}
 
 	void addLast(int data){
@@ -35,13 +34,11 @@ class LinkedList{
 		Node newNode = new Node(data);
 
 		if(head == null){
-
 			head = newNode;
 		}else{
 			Node temp = head;
 
 			while(temp.next != null){
-
 				temp = temp.next;
 			}
 
@@ -49,60 +46,38 @@ class LinkedList{
 		}
 	}
 
-	int countNode(){
-
-
-		int count = 0;
-		Node temp = head;
-
-		while(temp != null){
-
-			count++;
-			temp = temp.next;
-		}
-	
-		return count;
-	}
-
 	void addAtPos(int pos,int data){
 
-		int count = countNode();
-
-		if(pos <= 0 || pos >= count+2){
-
+		if(pos <= 0 || pos >= countNode()+2){
 			System.out.println("wrong input");
+			return;
+		}
+		Node newNode = new Node(data);
+		
+		if(pos == 1){
+			addFirst(data);
+		}else if(pos == countNode()+1){
+			addLast(data);
 		}else{
-			if(pos == 1){
-				addFirst(data);
-			}else if(pos == count+1){
-				addLast(data);
-			}else{
-				Node newNode = new Node(data);
+			Node temp = head;
 
-				Node temp = head;
-
-				while(pos-2 != 0){
-
-					temp = temp.next;
-					pos--;
-				}
-
-				newNode.next = temp.next;
-				temp.next = newNode;
+			while(pos-2 != 0){
+				temp = temp.next;
+				pos--;
 			}
+
+			newNode.next = temp.next;
+			temp.next = newNode;
 		}
 	}
 
 	void delFirst(){
 
 		if(head == null){
-
-			System.out.println("LinkedList empty");
+			System.out.println("already empty");
+			return;
 		}else{
-
-			int count = countNode();
-
-			if(count == 1){
+			if(countNode() == 1){
 				head = null;
 			}else{
 				head = head.next;
@@ -113,74 +88,64 @@ class LinkedList{
 	void delLast(){
 
 		if(head == null){
-
-			System.out.println("LinkedList empty");
+			System.out.println("already empty");
+			return;
+		}else if(head.next == null){
+			head = null;
 		}else{
-
-			int count = countNode();
-
-			if(count == 1){
-				head = null;
-			}else{
-				Node temp = head;
-
-				while(temp.next.next != null){
-
-					temp = temp.next;
-				}
-
-				temp.next = null;
+			Node temp = head;
+			while(temp.next.next != null){
+				temp = temp.next;
 			}
+			temp.next = null;
 		}
 	}
 
 	void delAtPos(int pos){
 
-		int count = countNode();
-
-		if(pos <= 0 || pos >= count+1){
-
+		if(head == null){
+			System.out.println("already empty");
+			return;
+		}
+		if(pos <= 0 || pos >= countNode()+1){
 			System.out.println("wrong input");
-	
+			return;
+		}
+
+		if(pos == 1){
+			delFirst();
+		}else if(pos == countNode()){
+			delLast();
 		}else{
-			if(pos == 1){
-				delFirst();
-			}else if(pos == count){
-				delLast();
-			}else{
-			
-				Node temp = head;
-
-				while(pos-2 != 0){
-
-					temp = temp.next;
-					pos--;
-				}
-
-				temp.next = temp.next.next;
+			Node temp = head;
+			while(pos-2 != 0){
+				temp = temp.next;
+				pos--;
 			}
+			temp.next = temp.next.next;
 		}
 	}
 
 	void printSLL(){
-/*
-		Node temp = head;
-
-		while(temp != null){
-
-			System.out.print(temp.data + "->");
-			temp = temp.next;
-		}
-
-		System.out.println();*/
 
 		Node temp = head;
 
 		while(temp != null){
 
-			System.out.println(temp.data  + "  ->   "  + temp + "   ->   "  + temp.next);
+			System.out.println(temp.data + " , " + temp);
 			temp = temp.next;
 		}
+	}
+
+	int countNode(){
+
+		int count = 0;
+		Node temp = head;
+		while(temp != null){
+			count++;
+			temp = temp.next;
+		}
+		return count;
 	}
 }
 

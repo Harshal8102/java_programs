@@ -18,6 +18,7 @@ class BinarySearch{
 				}else{
 					return mid;
 				}
+
 			}else if(a[mid] < s)
 				start = mid+1;
 			else

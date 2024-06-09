@@ -1,4 +1,4 @@
-//find index where given target element should be insertedin sorted array
+//find index where given target element should be inserted in sorted array
 
 import java.io.*;
 class BinarySearch{

@@ -19,7 +19,7 @@ class Threaddemo{
 		obj.start();
 		obj.join(2000,100);
 		obj.join(2000);
-		obj.join();
+//obj.join();
 
 		for(int i=0; i<10; i++){
 			System.out.println("In main");

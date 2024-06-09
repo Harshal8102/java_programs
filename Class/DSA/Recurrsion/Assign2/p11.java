@@ -28,7 +28,6 @@ class Recurrsion{
 	}
 
 	boolean isHarshadNumber(int num){
-
 		return num % sumOfDigits(num) == 0;
 	}
 

@@ -8,7 +8,7 @@ class BinarySearch{
 
 		for(int i=0; i<a.length; i++){
 
-			int start = 0,end = a.length-1;
+			int start = 0,end = a[i].length-1;
 
 			while(start <= end){
 

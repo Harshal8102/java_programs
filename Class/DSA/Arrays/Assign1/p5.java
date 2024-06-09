@@ -1,6 +1,5 @@
 //find product of max product subarray
 
-
 import java.util.*;
 class Demo{
 
@@ -20,7 +19,6 @@ class Demo{
 			if(mul == 0)
 				mul = 1;
 		}
-
 		return maxProduct;
 	}
 
@@ -37,7 +35,6 @@ class Demo{
 
 			arr[i] = sc.nextInt();
 		}
-
 
 		System.out.println(maxProduct(arr,n));
 	}

@@ -13,10 +13,9 @@ class BinarySearch{
 			int mid = (start+end)/2;
 
 			if(Math.abs(a[mid]-target)<ans){
-
-				ans = a[mid];
-				
+				ans = a[mid];	
 			}
+
 			if(a[mid] < target)
 				start = mid+1;
 			else

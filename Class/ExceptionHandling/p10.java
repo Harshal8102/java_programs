@@ -1,4 +1,3 @@
-
 import java.io.*;
 class Demo{
 
@@ -27,9 +26,7 @@ class Demo{
 	}
 
 	public static void main(String[] args)throws IOException{
-
 		Demo obj = new Demo();
 		obj.getData();
-
 	}
 }

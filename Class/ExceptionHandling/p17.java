@@ -7,6 +7,7 @@ class DataOverFlowException extends RuntimeException{
 		super(str);
 	}
 }
+
 class DataUnderFlowException extends RuntimeException{
 
 	DataUnderFlowException(String str){
@@ -35,10 +36,8 @@ class Arraydemo{
 
 			arr[i] = data;
 		}
+
 		for(int x : arr)
 			System.out.println(x + "   ");
 	}
 }
-
-
-

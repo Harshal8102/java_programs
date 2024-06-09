@@ -1,6 +1,5 @@
 //print sum of every single subarray
 
-
 import java.util.*;
 class Demo{
 

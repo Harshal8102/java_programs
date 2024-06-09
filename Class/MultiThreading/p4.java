@@ -18,4 +18,4 @@ class Threaddemo{
 		System.out.println(Thread.currentThread().getName());
 	}
 }
-		
+

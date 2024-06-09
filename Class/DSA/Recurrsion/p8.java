@@ -30,4 +30,3 @@ class DoubleRecurrsion{
 		System.out.println(obj.stackCount);
 	}
 }
-

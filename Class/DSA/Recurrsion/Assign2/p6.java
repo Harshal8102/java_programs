@@ -20,8 +20,8 @@ class Recurrsion{
 		return sum;
 	}*/
 	int factorOf(int n){
-		if(n == 1)
-			return 1;
+		if(n <= 2)
+			return n;
 
 		return n * factorOf(n-1);
 	}

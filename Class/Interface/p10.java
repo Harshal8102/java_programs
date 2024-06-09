@@ -24,3 +24,4 @@ class Client{
 		obj.fun();
 	}
 }
+

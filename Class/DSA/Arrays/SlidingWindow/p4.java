@@ -1,6 +1,5 @@
 //Given array A of element B
-//find min no. of swaps required to bring all the element <= B together:wq
-//
+//find min no. of swaps required to bring all the element <= B together
 
 
 import java.util.*;
@@ -19,3 +18,5 @@ class Demo{
 
 			a[i] = sc.nextInt();
 		}
+	}
+}
